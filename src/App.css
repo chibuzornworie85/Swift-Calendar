@@ -1,0 +1,141 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.calendar-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.month-grid {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 2px 2px 16px 16px rgba(158, 158, 158, 0.1);
+}
+
+.month-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-row {
+  display: contents;
+}
+
+.calendar-cell {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+}
+
+.calendar-cell:hover,
+.calendar-cell:focus {
+  background-color: #e0f7fa;
+}
+
+.calendar-cell.today {
+  background-color: #b2ebf2;
+  font-weight: bold;
+}
+
+.calendar-cell.disabled {
+  color: #bbb;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-textarea {
+  resize: none;
+  height: 60px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-indicator {
+  position: absolute;
+  bottom: 4px;
+  right: 15px;
+  top: 20px;
+  color: red;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.calendar-cell {
+  position: relative;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+}
+
+.date-overlay {
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.2s ease;
+}
+
+.date-overlay.left {
+  transform: translateX(-100%);
+}
+
+.date-overlay.right {
+  transform: translateX(0);
+}
+
+.date-overlay::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+}
+
+.date-overlay.right::after {
+  left: 12px;
+}
+
+.date-overlay.left::after {
+  right: 12px;
+}
