@@ -21,7 +21,9 @@
   padding: 1rem;
   border-radius: 8px;
   width: 280px;
-  box-shadow: 2px 2px 16px 16px rgba(158, 158, 158, 0.1);
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
 .month-title {
