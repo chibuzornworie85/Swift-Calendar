@@ -1,4 +1,4 @@
-# 🗓️ Swift Calendar App
+# 🗓️ Swift Calendar
 
 A simple, accessible monthly calendar app built with **React**, **TypeScript**, and **vanilla CSS**. Users can click on dates to add short notes (max 100 characters), which are saved in `localStorage` for persistence.
 
