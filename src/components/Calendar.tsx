@@ -1,11 +1,11 @@
 import React from 'react'
 
-const App = () => {
+const Calendar = () => {
   return (
     <div>
-      <h1>hello dev</h1>
+      
     </div>
   )
 }
 
-export default App
+export default Calendar

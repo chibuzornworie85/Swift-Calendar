@@ -1,11 +1,11 @@
 import React from 'react'
 
-const App = () => {
+const DateOverlay = () => {
   return (
     <div>
-      <h1>hello dev</h1>
+      
     </div>
   )
 }
 
-export default App
+export default DateOverlay
